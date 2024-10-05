@@ -94,7 +94,7 @@ header {
 
 .sale_btn__circle {
   display: inline-block;
-  background-color: #fff;
+  background-color: var(--txt-White);
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -174,11 +174,11 @@ header {
   transition: background 0.3s ease;
 }
 .modal .modal_content li:hover {
-  background: #f4f4f4;
+  background: var(--Lighthouse);
 }
 .modal .modal_content li a {
   text-decoration: none;
-  color: #333;
+  color: var(--txt-Dark);
   display: block;
 }
 .modal.show {
