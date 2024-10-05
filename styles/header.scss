@@ -96,7 +96,7 @@ header {
 }
 .sale_btn__circle {
   display: inline-block;
-  background-color: #fff;
+  background-color: var(--txt-White);
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -155,8 +155,8 @@ header {
   position: absolute;
   top: 72px;
   left: 26%;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--txt-White);
+  border: 1px solid var(--Steam);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   width: 800px;
@@ -176,12 +176,12 @@ header {
       transition: background 0.3s ease;
 
       &:hover {
-        background: #f4f4f4;
+        background: var(--Lighthouse);
       }
 
       a {
         text-decoration: none;
-        color: #333;
+        color: var(--txt-Dark);
         display: block;
       }
     }

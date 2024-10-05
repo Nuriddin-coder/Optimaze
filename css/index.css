@@ -153,8 +153,8 @@ header {
   position: absolute;
   top: 72px;
   left: 26%;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--txt-White);
+  border: 1px solid var(--Steam);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   width: 800px;
@@ -408,7 +408,7 @@ nav {
 }
 
 .content_banner {
-  background-color: #f1ecec;
+  background-color: var(--Vintage-Porcelain);
   padding: 12px 20px;
   border-radius: 10px;
 }
@@ -588,7 +588,7 @@ nav {
 }
 
 .accordion_item {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--Cerebral-Grey);
 }
 
 .accordion_header {
@@ -596,6 +596,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   padding-block: 15px;
   cursor: pointer;
 }
@@ -603,9 +605,17 @@ nav {
   color: var(--Spartan-Blue);
   transition: all 0.3s;
 }
+.accordion_header:hover h3 {
+  color: var(--Spartan-Blue);
+  transition: all 0.3s;
+}
+
+.accordion_header h3 {
+  transition: all 0.3s;
+}
 
 .accordion_header span {
-  color: #bedada;
+  color: var(--Defender);
   font-size: 60px;
   font-weight: 300;
 }
@@ -613,7 +623,13 @@ nav {
 .accordion_content {
   padding: 15px;
   display: none;
-  padding-left: 5rem;
+}
+
+.accordion_content p {
+  color: var(--txt-Red-main-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .icon {
@@ -690,6 +706,10 @@ nav {
   --Red-main-color: #ff2e4c;
   --Defender: #bedada;
   --Spartan-Blue: #7b8a9a;
+  --Cerebral-Grey: #ccc;
+  --Vintage-Porcelain: #f1ecec;
+  --Steam: #ddd;
+  --Lighthouse: #f4f4f4;
 }
 
 *,

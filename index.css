@@ -93,7 +93,7 @@ header {
 
 .sale_btn__circle {
   display: inline-block;
-  background-color: #fff;
+  background-color: var(--txt-White);
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -150,8 +150,8 @@ header {
   position: absolute;
   top: 72px;
   left: 26%;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--txt-White);
+  border: 1px solid var(--Steam);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   width: 800px;
@@ -171,11 +171,11 @@ header {
   transition: background 0.3s ease;
 }
 .modal .modal_content li:hover {
-  background: #f4f4f4;
+  background: var(--Lighthouse);
 }
 .modal .modal_content li a {
   text-decoration: none;
-  color: #333;
+  color: var(--txt-Dark);
   display: block;
 }
 .modal.show {
@@ -402,7 +402,7 @@ nav {
 }
 
 .content_banner {
-  background-color: #f1ecec;
+  background-color: var(--Vintage-Porcelain);
   padding: 12px 20px;
   border-radius: 10px;
 }
@@ -578,7 +578,7 @@ nav {
 }
 
 .accordion_item {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--Cerebral-Grey);
 }
 
 .accordion_header {
@@ -599,8 +599,12 @@ nav {
   transition: all 0.3s;
 }
 
+.accordion_header h3 {
+  transition: all 0.3s;
+}
+
 .accordion_header span {
-  color: #bedada;
+  color: var(--Defender);
   font-size: 60px;
   font-weight: 300;
 }
@@ -689,6 +693,10 @@ nav {
   --Red-main-color: #ff2e4c;
   --Defender: #bedada;
   --Spartan-Blue: #7b8a9a;
+  --Cerebral-Grey: #ccc;
+  --Vintage-Porcelain: #f1ecec;
+  --Steam: #ddd;
+  --Lighthouse: #f4f4f4;
 }
 
 *,
