@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Optimaze</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header_main">
+          <a href="#" class="logo">Logo</a>
+          <div class="header_menu">
+            <button class="burger_second__btn">
+              <img
+                class="burger_second__icon"
+                src="./assets/icons/burger-menu-second.svg"
+                alt="burger-second"
+              />
+              Все предложения
+            </button>
+
+            <div class="modal" id="modal">
+              <ul class="modal_content">
+                <li><a href="#">что-то написано 1</a></li>
+                <li><a href="#">что-то написано 2</a></li>
+                <li><a href="#">что-то написано 3</a></li>
+                <li><a href="#">что-то написано 4</a></li>
+              </ul>
+            </div>
+            <ul class="header_links">
+              <li class="header_links__items"><a href="#">Скидки</a></li>
+              <li class="header_links__items"><a href="#">Акции</a></li>
+              <li class="header_links__items"><a href="#">Промокоды</a></li>
+              <li class="header_links__items"><a href="#">Кешбэк</a></li>
+            </ul>
+            <img class="search" src="./assets/icons/search.svg" alt="search" />
+            <button class="social_btn">
+              <img
+                class="social_btn__item"
+                src="./assets/icons/social.svg"
+                alt="social"
+              />
+            </button>
+            <button class="profile_btn">
+              <img src="./assets/icons/profile.svg" alt="profile" />
+            </button>
+            <select class="select" name="select" id="select">
+              <option class="select_options" value="RU">Ру</option>
+              <option class="select_options" value="EN">EN</option>
+              <option class="select_options" value="UZ">UZ</option>
+            </select>
+            <button class="burger_btn">
+              <img src="./assets/icons/burger-menu.svg" alt="burger" />
+            </button>
+            <button class="add_sale__btn">
+              Добавить скидку <span class="sale_btn__circle"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container main_content">
+        <nav>
+          <div class="nav_title_box">
+            <h1 class="nav_title">Скидки дня</h1>
+            <p class="nav_subtitle">23 предложения</p>
+          </div>
+
+          <div>
+            <div class="card">
+              <div class="card_item">
+                <div class="card_img">
+                  <p>До 29 февраля</p>
+                  <img src="./assets/imgs/korzinka.png" alt="korzinkaa" />
+                </div>
+                <div class="card_info">
+                  <div>
+                    <h3>Korzinka.uz</h3>
+                    <p class="card_info__title">В четверг скидки на рыбу</p>
+                  </div>
+                  <p class="card_info__sale">Скидки</p>
+                  <div class="card_info__percent">
+                    <p>Кешбэк</p>
+                    <strong>3%</strong>
+                  </div>
+                  <p class="card_info__market">Супермаркеты</p>
+                </div>
+              </div>
+              <div class="card_item">
+                <div class="card_img">
+                  <p>До 29 февраля</p>
+                  <img src="./assets/imgs/mango.png" alt="korzinkaa" />
+                </div>
+                <div class="card_info">
+                  <h3>MANGO</h3>
+                  <p class="card_info__title">Акция 1+1</p>
+                  <p class="card_info__sale">Акции</p>
+                  <div class="card_info__percent">
+                    <p>Кешбэк</p>
+                    <strong>3%</strong>
+                  </div>
+                  <p class="card_info__market">Магазины бренд...</p>
+                </div>
+              </div>
+              <div class="card_item">
+                <div class="card_img">
+                  <p>До 29 февраля</p>
+                  <img src="./assets/imgs/makro.png" alt="makro" />
+                </div>
+                <div class="card_info">
+                  <h3>Makro</h3>
+                  <p class="card_info__title">При покупке CIF пачка...</p>
+                  <p class="card_info__sale">Акции</p>
+                  <div class="card_info__percent">
+                    <p>Кешбэк</p>
+                    <strong>3%</strong>
+                  </div>
+                  <p class="card_info__market">Супермаркеты</p>
+                </div>
+              </div>
+
+              <div class="card_item">
+                <div class="card_img">
+                  <p>До 29 февраля</p>
+                  <img src="./assets/imgs/texnomart.png" alt="texnomart" />
+                </div>
+                <div class="card_info">
+                  <h3>Korzinka.uz</h3>
+                  <p class="card_info__title">В четверг скидки на рыбу</p>
+                  <p class="card_info__sale">Скидки</p>
+                  <div class="card_info__percent">
+                    <p>Кешбэк</p>
+                    <strong>3%</strong>
+                  </div>
+                  <p class="card_info__market">Супермаркеты</p>
+                </div>
+              </div>
+            </div>
+            <button class="nav_btn">
+              Показать все <span class="nav_circle"></span>
+            </button>
+          </div>
+        </nav>
+
+        <div class="content_box">
+          <div class="content_banner">
+            <h1 class="banner_title">Топовые скидки</h1>
+            <div class="banner_list">
+              <button>Супермаркеты</button>
+              <button>Рестораны</button>
+              <button>Магазины</button>
+            </div>
+
+            <div class="slider_box">
+              <div class="slider_cards_box">
+                <div class="slider_card">
+                  <div class="slider_card__img">
+                    <p>До 29 февраля</p>
+                    <img src="./assets/imgs/gosty.png" alt="gosty" />
+                  </div>
+                  <div class="card_info">
+                    <div>
+                      <h3>Gosty</h3>
+                      <p class="card_info__title">
+                        Каждый вторник — 20% на все меню
+                      </p>
+                    </div>
+                    <div class="card_info__discount">
+                      <p class="card_info__sale">Скидки</p>
+                      <div class="card_info__percent">
+                        <p>Кешбэк</p>
+                        <strong>3%</strong>
+                      </div>
+                    </div>
+                    <p class="card_info__market">Супермаркеты</p>
+                  </div>
+                </div>
+                <div class="slider_card second_card">
+                  <div class="slider_card__img">
+                    <p>До 29 февраля</p>
+                    <img src="./assets/imgs/shosh.png" alt="gosty" />
+                  </div>
+                  <div class="card_info">
+                    <div>
+                      <h3>Petrovich</h3>
+                      <p class="card_info__title">
+                        Скидки на еду и напитки по выгодной
+                      </p>
+                    </div>
+                    <div class="card_info__discount">
+                      <p class="card_info__sale">Скидки</p>
+                      <div class="card_info__percent">
+                        <p>Кешбэк</p>
+                        <strong>3%</strong>
+                      </div>
+                    </div>
+                    <p class="card_info__market">Супермаркеты</p>
+                  </div>
+                </div>
+                <div class="slider_card third_card">
+                  <div class="slider_card__img">
+                    <p>До 29 февраля</p>
+                    <img src="./assets/imgs/petrovich.png" alt="gosty" />
+                  </div>
+                  <div class="card_info">
+                    <div>
+                      <h3>Petrovich</h3>
+                      <p class="card_info__title">
+                        Ланч по выгодной цене и 2% кеш...
+                      </p>
+                    </div>
+                    <div class="card_info__discount">
+                      <p class="card_info__sale">Скидки</p>
+                      <div class="card_info__percent">
+                        <p>Кешбэк</p>
+                        <strong>3%</strong>
+                      </div>
+                    </div>
+                    <p class="card_info__market">Супермаркеты</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider_dots">
+                <span class="slider_inactive__btn"></span>
+                <span class="slider_active__btn"></span>
+                <span class="slider_inactive__btn"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="content_info">
+            <h2>Добро пожаловать на сайт</h2>
+
+            <h3>
+              Ваш надёжный помощник в поиске лучших скидок и акций различных
+              компаний!
+            </h3>
+            <p>
+              Мы собрали для вас все самые выгодные предложения, чтобы вы могли
+              сэкономить свои деньги и получить максимум удовольствия
+              от покупок.
+            </p>
+            <button>Развернуть текст</button>
+          </div>
+
+          <div class="faq">
+            <h1>FAQ</h1>
+
+            <div class="accordion">
+              <div class="accordion_item">
+                <div class="accordion_header" onclick="toggleAccordion(this)">
+                  <h3>Какие компании представлены на сайте?</h3>
+                  <span class="icon">+</span>
+                </div>
+                <div class="accordion_content">
+                  <p>
+                    Чтобы быть в курсе новых скидок и акций на сайте, вы можете
+                    подписаться на наш телеграм-канал или следить за новостями.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion_item">
+                <div class="accordion_header" onclick="toggleAccordion(this)">
+                  <h3>
+                    Как я могу быть в курсе новых скидок и акций на сайте?
+                  </h3>
+                  <span class="icon">+</span>
+                </div>
+                <div class="accordion_content">
+                  <p>
+                    Регулярно отправляем информацию о новых предложениях и
+                    акциях нашим подписчикам.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion_item">
+                <div class="accordion_header" onclick="toggleAccordion(this)">
+                  <h3>
+                    Могу ли я поделиться найденными скидками и акциями с
+                    друзьями?
+                  </h3>
+                  <span class="icon">+</span>
+                </div>
+                <div class="accordion_content">
+                  <p>
+                    Да, вы можете делиться скидками и акциями с друзьями через
+                    социальные сети.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
